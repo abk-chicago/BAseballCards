@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CardHub</string>
+    <string name="search_hint">Search for a Baseball Player</string>
+</resources>
