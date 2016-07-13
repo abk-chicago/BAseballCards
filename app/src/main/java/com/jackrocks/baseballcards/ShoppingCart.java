@@ -5,16 +5,9 @@ import java.util.ArrayList;
 /**
  * Created by TheDude on 7/13/16.
  */
-public class ShoppingCart {
+public class ShoppingCart extends ArrayList<String> {
 
-
-
-    public static ShoppingCart mInstance;
-    public ArrayList<String> cards;
-
-    ShoppingCart() {
-        cards = new ArrayList();
-    }
+    private static ShoppingCart mInstance = new ShoppingCart();
 
     public static synchronized ShoppingCart getInstance() {
         if (mInstance == null) {

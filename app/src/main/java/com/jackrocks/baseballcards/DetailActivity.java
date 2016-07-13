@@ -3,6 +3,9 @@ package com.jackrocks.baseballcards;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.StringBuilderPrinter;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class DetailActivity extends AppCompatActivity {
@@ -12,6 +15,7 @@ public class DetailActivity extends AppCompatActivity {
     TextView mTxtTeam;
     TextView mTxtDescription;
     TextView mTxtPrice;
+    private Intent mCheckout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,7 +57,40 @@ public class DetailActivity extends AppCompatActivity {
 
 
 
+        Button btn_ShoppingCart =  (Button) findViewById(R.id.btn_Shoppingcart);
+        mCheckout = new Intent(DetailActivity.this, ShoppingCartScrollingActivity.class);
+        View.OnClickListener CheckoutView = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(mCheckout);
+            }
+        };
 
+        btn_ShoppingCart.setOnClickListener(CheckoutView);
+
+
+        ShoppingCart cart = ShoppingCart.getInstance();
+        //cart.add(realName + " - " + realTeam + " @ " + realformattedPrice);
+        //now...
+        cart.add(formattedListCard(realName, realTeam, realformattedPrice));
+        cart.add(formattedListCard(realName, realTeam, realformattedPrice));
+        cart.add(formattedListCard(realName, realTeam, realformattedPrice));
+
+
+
+
+    }
+
+
+    private String formattedListCard(String name,String team, String price) {
+        StringBuilder sb = new StringBuilder();
+        //        cart.add(realName + " - " + realTeam + " @ " + realformattedPrice);
+        sb.append(name);
+        sb.append(" - ");
+        sb.append(team);
+        sb.append(" : ");
+        sb.append(price);
+        return sb.toString();
     }
 }
 

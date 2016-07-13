@@ -63,4 +63,13 @@
         android:layout_centerHorizontal="true"
         android:textSize="30dp" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proceed to Checkout"
+        android:id="@+id/btn_Shoppingcart"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="69dp" />
+
 </RelativeLayout>
