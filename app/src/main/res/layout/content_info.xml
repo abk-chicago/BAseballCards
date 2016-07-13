@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.jackrocks.baseballcards.InfoActivity"
+    tools:showIn="@layout/activity_info">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:textSize="30dp"
+        android:text="  Founder and CEO:\n\n\nHello Baseball Card Fanatics. My name is Jack Timberlake and for as long as I could remember I loved baseball and collecting baseball cards.
+I was never really into computers but the apps I loved always had to do with sports. Watching MLBTV on a iphone really enabled me to always feel like I was at home in College. But there was something
+still missing. The ability to trade, buy, sell, and just talk to my friends about the rareness and value of certain Baseball Cards. That's why I started to create CardHub to Give fanatics the ability
+to add more Baseball Card Gems to there collection and aww at other's collections.\n
+
+\n\n
+\nCurrent Features:\n
+In our first week, our only features include browsing various baseball cards
+and buying them.\n\n
+
+\n\n
+\nUpcoming Features: \n
+The dream I have and the dream I am going to see through is to create
+a social media website wher people can buy, sell, and trade various baseball cards. It will
+be a place for baseball card fanatics to interact, show off their collection, view others
+collections, and talk about the future price value in certain cards\n\n
+
+
+
+\n
+\n
+Tip of the Day:\n
+Buy Low Sell High. Peace.\n
+
+                                    " />
+
+</android.support.v4.widget.NestedScrollView>

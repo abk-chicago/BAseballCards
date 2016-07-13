@@ -30,6 +30,7 @@ public class ListActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_);
 
@@ -90,6 +91,7 @@ public class ListActivity extends AppCompatActivity {
 
 
         }
+
 
         @Override
         public boolean onCreateOptionsMenu (Menu menu){
