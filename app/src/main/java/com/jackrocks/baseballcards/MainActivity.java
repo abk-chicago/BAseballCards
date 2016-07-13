@@ -9,6 +9,7 @@ import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
     private Intent mExplore;
+    private Intent mInfo
 
 
     @Override
@@ -29,6 +30,11 @@ public class MainActivity extends AppCompatActivity {
         };
 
         btn_Explore.setOnClickListener(ExploreView);
+
+
+        Button btn_More_Info = (Button) findViewById(R.id.btn_More_Info);
+        mInfo = new Intent(MainActivity.this, InfoActivity.class);
+        View.OnClickListener InfoView =
 
 
     }
