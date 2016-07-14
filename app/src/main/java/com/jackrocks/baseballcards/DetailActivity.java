@@ -73,9 +73,6 @@ public class DetailActivity extends AppCompatActivity {
         //cart.add(realName + " - " + realTeam + " @ " + realformattedPrice);
         //now...
         cart.add(formattedListCard(realName, realTeam, realformattedPrice));
-        cart.add(formattedListCard(realName, realTeam, realformattedPrice));
-        cart.add(formattedListCard(realName, realTeam, realformattedPrice));
-
 
 
 
